@@ -1,0 +1,12 @@
+python main.py --model_name BERT \
+--data_dir ../data/docred \
+--eval_mode micro \
+--transformer_type bert \
+--model_name_or_path bert-base-cased \
+--train_file train_annotated.json \
+--dev_file train_distant.json \
+--test_file train_distant.json \
+--load_path ../data/checkpoints/BERT/pretrain \
+--save_path ../data/checkpoints/BERT/pretrain \
+--test_batch_size 8 \
+--num_class 97

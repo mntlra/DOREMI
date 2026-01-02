@@ -1,0 +1,12 @@
+python main.py  --tag train \
+--model_name BiLSTM \
+--save_path ../data/checkpoints/BiLSTM/finetune_redocred_iteration1_agreement_logsum \
+--load_path ../data/checkpoints/BiLSTM/pretrain_redocred \
+--data_dir ../data/redocred \
+--train_prefix train_redocred_iteration1_agreement_logsum \
+--test_prefix dev_revised \
+--train_batch_size 40 \
+--test_batch_size 40 \
+--num_train_epochs 70 \
+--num_class 97 \
+--seed 66

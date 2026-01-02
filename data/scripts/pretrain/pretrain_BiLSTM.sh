@@ -1,0 +1,11 @@
+python main.py  --tag train \
+--model_name BiLSTM \
+--save_path ../data/checkpoints/BiLSTM/pretrain \
+--data_dir ../data/docred \
+--train_prefix train_annotated \
+--test_prefix  dev_dev \
+--train_batch_size 40 \
+--test_batch_size 40 \
+--num_train_epochs 200 \
+--num_class 97 \
+--seed 66

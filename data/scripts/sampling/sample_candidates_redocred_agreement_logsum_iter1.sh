@@ -1,0 +1,11 @@
+python main.py --tag infer \
+--data_dir ../data/redocred \
+--distant_prefix  train_distant_candidates_redocred_iter1 \
+--train_file train_revised.json \
+--isDistant \
+--num_chunks 200 \
+--sc logsum_agreement \
+--pred_dir ../data/checkpoints \
+--pred_mode  pretrain_redocred \
+--num_samples 300 \
+--new_sample_file sample_redocred_agreement_logsum_iter1.json\

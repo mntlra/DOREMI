@@ -1,0 +1,12 @@
+python main.py --tag infer \
+--data_dir ../data/docred \
+--distant_prefix  train_distant_candidates_iter1 \
+--train_file train_annotated.json \
+--isDistant \
+--test_batch_size 40 \
+--num_chunks 100 \
+--sc logsum_agreement \
+--pred_dir ../data/checkpoints \
+--pred_mode  pretrain \
+--num_samples 100 \
+--new_sample_file sample_agreement_logsum_iter1.json\

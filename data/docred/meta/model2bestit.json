@@ -1,0 +1,7 @@
+{
+	"CNN3": "finetune_iteration4_agreement_logsum",
+	"ContextAware": "finetune_iteration1_agreement_logsum",
+	"BiLSTM": "pretrain",
+	"LSTM": "finetune_iteration2_agreement_logsum",
+	"BERT": "finetune_iteration2_agreement_logsum"
+}

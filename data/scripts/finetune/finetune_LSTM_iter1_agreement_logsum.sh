@@ -1,0 +1,12 @@
+python main.py  --tag train \
+--model_name LSTM \
+--save_path ../data/checkpoints/LSTM/finetune_iteration1_agreement_logsum \
+--load_path ../data/checkpoints/LSTM/pretrain \
+--data_dir ../data/docred \
+--train_prefix train_iteration1_agreement_logsum \
+--test_prefix dev_dev \
+--train_batch_size 40 \
+--test_batch_size 40 \
+--num_train_epochs 70 \
+--num_class 97 \
+--seed 66

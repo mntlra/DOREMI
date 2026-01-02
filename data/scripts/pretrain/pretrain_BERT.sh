@@ -1,0 +1,17 @@
+python main.py --tag train \
+--model_name BERT \
+--data_dir ../data/docred \
+--transformer_type bert \
+--model_name_or_path bert-base-cased \
+--train_file train_annotated.json \
+--dev_file dev.json \
+--save_path ../data/checkpoints/BERT/pretrain \
+--train_batch_size 4 \
+--test_batch_size 8 \
+--gradient_accumulation_steps 1 \
+--lr_transformer 3e-5 \
+--max_grad_norm 1.0 \
+--warmup_ratio 0.06 \
+--num_train_epochs 30.0 \
+--seed 66 \
+--num_class 97

@@ -1,0 +1,7 @@
+{
+	"CNN3": "finetune_redocred_iteration2_agreement_logsum_300",
+	"ContextAware": "finetune_redocred_iteration4_agreement_logsum_300",
+	"BiLSTM": "pretrain_redocred",
+	"LSTM": "finetune_redocred_iteration1_agreement_logsum_300",
+	"BERT": "finetune_redocred_iteration4_agreement_logsum_300"
+}
