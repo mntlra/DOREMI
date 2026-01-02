@@ -1,3 +1,10 @@
+# macOS 
+.DS_Store
+*/.DS_Store
+
+# data files
+data/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -15,10 +22,6 @@ py/.idea/*
 
 # Protegé
 *catalog-v001.xml
-
-# macOS 
-.DS_Store
-*/.DS_Store
 
 # Distribution / packaging
 .Python
