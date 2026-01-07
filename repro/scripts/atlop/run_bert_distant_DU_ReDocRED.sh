@@ -1,0 +1,18 @@
+python train.py --data_dir ../Re-DocRED/data \
+--transformer_type bert \
+--model_name_or_path bert-base-cased \
+--train_file DU-DDS-ReDocRED.json \
+--train_annotated_file train_revised.json \
+--save_path outputs/BERT/train_distant_DU_ReDocRED \
+--dev_file dev_revised.json \
+--test_file test_revised.json \
+--train_batch_size 4 \
+--test_batch_size 8 \
+--gradient_accumulation_steps 1 \
+--num_labels 4 \
+--learning_rate 5e-5 \
+--max_grad_norm 1.0 \
+--warmup_ratio 0.06 \
+--num_train_epochs 30.0 \
+--seed 66 \
+--num_class 97

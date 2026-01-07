@@ -1,0 +1,23 @@
+python run_attention.py --do_train \
+--data_dir ../Re-DocRED/data \
+--transformer_type roberta \
+--model_name_or_path roberta-large \
+--display_name  ReDocRED/RoBERTa/student_self_trained_agreement_logsum_redocred300_vanilla70_UGDRE \
+--train_file train_distant_agreement_logsum_redocred300_vanilla70_UGDRE.json \
+--dev_file dev_revised.json \
+--teacher_sig_path ReDocRED/RoBERTa/teacher_trained/2025-05-05_21:45:16.846007/ \
+--save_path ReDocRED/RoBERTa/student_self_trained_agreement_logsum_redocred300_vanilla70_UGDRE \
+--train_batch_size 4 \
+--test_batch_size 8 \
+--gradient_accumulation_steps 2 \
+--evaluation_steps 5000 \
+--num_labels 4 \
+--lr_transformer 1e-5 \
+--lr_added 5e-5 \
+--max_grad_norm 5.0 \
+--evi_thresh 0.2 \
+--attn_lambda 1.0 \
+--warmup_ratio 0.06 \
+--num_train_epochs 2.0 \
+--seed 66 \
+--num_class 97

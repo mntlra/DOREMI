@@ -1,0 +1,23 @@
+python run_attention.py --do_train \
+--data_dir ../DocRED/data \
+--transformer_type roberta \
+--model_name_or_path roberta-large \
+--display_name  DocRED/RoBERTa/student_self_trained_DOREMI_DocRED \
+--train_file DOREMI-DDS-DocRED.json \
+--dev_file dev.json \
+--teacher_sig_path PATH_TO_TEACHER_MODEL \
+--save_path DocRED/RoBERTa/student_self_trained_DOREMI_DocRED \
+--train_batch_size 4 \
+--test_batch_size 8 \
+--gradient_accumulation_steps 2 \
+--evaluation_steps 5000 \
+--num_labels 4 \
+--lr_transformer 1e-5 \
+--lr_added 5e-5 \
+--max_grad_norm 5.0 \
+--evi_thresh 0.2 \
+--attn_lambda 1.0 \
+--warmup_ratio 0.06 \
+--num_train_epochs 2.0 \
+--seed 66 \
+--num_class 97

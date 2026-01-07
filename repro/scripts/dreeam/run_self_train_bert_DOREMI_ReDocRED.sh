@@ -1,0 +1,21 @@
+python run_attention.py --do_train \
+--data_dir ../Re-DocRED/data  \
+--transformer_type bert \
+--model_name_or_path bert-base-cased \
+--display_name  ReDocRED/BERT/student_self_trained_DOREMI_ReDocRED \
+--train_file DOREMI-DDS-ReDocRED.json \
+--dev_file dev_revised.json \
+--teacher_sig_path PATH_TO_TEACHER_MODEL \
+--save_path ReDocRED/BERT/student_self_trained_DOREMI_ReDocRED \
+--train_batch_size 4 \
+--test_batch_size 8 \
+--gradient_accumulation_steps 2 \
+--evaluation_steps 5000 \
+--num_labels 4 \
+--lr_transformer 3e-5 \
+--max_grad_norm 5.0 \
+--evi_thresh 0.2 \
+--attn_lambda 1.0 \
+--warmup_ratio 0.06 \
+--num_train_epochs 2.0 \
+--num_class 97 
