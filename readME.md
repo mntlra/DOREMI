@@ -1,3 +1,7 @@
+_Research use only. Not a medical device.
+This software was developed in the HEREDITARY project as a research prototype. It has not been assessed or certified under the EU Medical Device Regulation (EU) 2017/745. It must not be used to diagnose, treat, monitor or make any other decision about individual patients._
+***
+
 # DOREMI: Optimizing Long Tail Predictions in Document-Level Relation Extraction
 
 Document-Level Relation Extraction (DocRE) presents significant challenges due to its reliance on cross-sentence context and the long-tail distribution of relation types, where many relations have scarce training examples. 
@@ -171,6 +175,9 @@ To aggregate the labels based on the pretrained models predicitions run (does no
 ```
 bash ../data/scripts/label_aggregation/merge_results_pretrain_docred.sh
 ```
+
+## Acknowledgement 
+This project has received funding from the HEREDITARY Project, as part of the European Union’s Horizon Europe research and innovation programme under grant agreement No GA 101137074. Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union. Neither the European Union nor the granting authority can be held responsible for them.
 
 
 ## References
