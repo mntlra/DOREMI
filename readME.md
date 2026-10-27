@@ -175,6 +175,8 @@ To aggregate the labels based on the pretrained models predicitions run (does no
 ```
 bash ../data/scripts/label_aggregation/merge_results_pretrain_docred.sh
 ```
+## Contact Person
+Laura Menotti, laura.menotti@unipd.it.
 
 ## Acknowledgement 
 This project has received funding from the HEREDITARY Project, as part of the European Union’s Horizon Europe research and innovation programme under grant agreement No GA 101137074. Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union. Neither the European Union nor the granting authority can be held responsible for them.
