@@ -8,6 +8,8 @@ Document-Level Relation Extraction (DocRE) presents significant challenges due t
 
 In this work, we introduce **DO**cument-level **R**elation **E**xtraction opti**M**izing the long ta**I**l (**DOREMI**), an active learning framework enhancing the representation of underrepresented relations through minimal yet targeted manual annotation. Unlike prior approaches that rely on large-scale noisy data or heuristic denoising, DOREMI actively selects the most informative examples to improve training efficiency and robustness. DOREMI can be applied to any existing DocRE model and is effective at mitigating long-tail biases, offering a scalable solution for improving generalization on rare relations.
 
+**Contact for misuse or vulnerability reports.** Laura Menotti, laura.menotti@unipd.it
+
 ![DOREMI Pipeline](DOREMI.png)
 
 ## Contents
